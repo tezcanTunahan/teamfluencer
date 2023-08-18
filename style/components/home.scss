@@ -1,0 +1,30 @@
+@import "../variable.scss";
+.home {
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+  @include flex(row, center, space-between);
+  &__title {
+    :last-child {
+      color: $primary;
+      transform: rotate(-5deg);
+      border-bottom: 10px solid $primary;
+    }
+    h1 {
+      font-size: 5rem;
+    }
+  }
+  p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: $accent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    @include flex(column, flex-start, center, 5rem);
+  }
+}

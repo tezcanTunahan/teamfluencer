@@ -1,0 +1,13 @@
+$text: #120206;
+$background: #efe7e764;
+$primary: #ee728d;
+$secondary: #f6b6c4;
+$accent: #c8193f;
+
+@mixin flex($direction: row, $align: center, $justify: center, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}

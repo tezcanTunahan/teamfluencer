@@ -1,0 +1,29 @@
+@import "./variable.scss";
+.nav {
+  height: 20vh;
+  width: 90%;
+  margin: auto;
+  @include flex(row, center, space-between);
+  &__left {
+    a {
+      color: $primary;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+  &__right {
+    transform: rotate(90deg);
+    position: relative;
+    top: 50px;
+    left: 50px;
+    :hover {
+      transition: color 0.3s ease;
+      cursor: pointer;
+      color: $primary;
+    }
+    span {
+      color: $primary;
+      font-weight: 700;
+    }
+  }
+}
