@@ -1,4 +1,4 @@
-import mongoose, { Document } from "mongoose";
+import mongoose, { Document, model, models } from "mongoose";
 
 const Schema = mongoose.Schema;
 
@@ -200,7 +200,9 @@ UserSchema.index({ gender: 1 });
 UserSchema.index({ age: 1 });
 UserSchema.index({ city: 1 });
 
-export default mongoose.model<UserDoc>("User", UserSchema);
+const User = models.User || model<UserDoc>("User", UserSchema);
+
+export default User;
 
 export interface AuthUserBody {
   phone: string;

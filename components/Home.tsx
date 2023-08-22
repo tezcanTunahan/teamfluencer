@@ -1,3 +1,4 @@
+"use client";
 import "@/style/components/home.scss";
 export default function Home() {
   return (
