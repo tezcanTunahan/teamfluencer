@@ -1,4 +1,5 @@
 "use client";
+import "@/style/components/newInfluencer.scss";
 import { useState } from "react";
 import Button from "./ui/Button";
 import Input from "./ui/Input";
@@ -33,8 +34,9 @@ export default function NewInfluencer() {
     console.log(data);
   };
   return (
-    <div className="newInfluencer">
-      <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="newInfluencer">
+      <div className="newInfluencer__influencer">
+        <h3>Influencer form </h3>
         <Input
           label="name"
           name="name"
@@ -123,13 +125,15 @@ export default function NewInfluencer() {
           placeholder="language"
           value={influencer.language}
         />
+      </div>
+      <div className="newInfluencer__ins">
         <h3>Instagram form </h3>
         <Input
           label="username"
           name="username"
           onChange={(e) => setInfluencer((prev) => ({ ...prev, insta: { ...prev.insta, username: e.target.value } }))}
           type="text"
-          placeholder="language"
+          placeholder="username"
           value={influencer.insta.username}
         />
         <Input
@@ -180,6 +184,8 @@ export default function NewInfluencer() {
           placeholder="average_like"
           value={influencer.insta.average_like}
         />
+      </div>
+      <div className="newInfluencer__tiktok">
         <h3>Tiktok form</h3>
         <Input
           label="username"
@@ -242,8 +248,9 @@ export default function NewInfluencer() {
           placeholder="tiktok_average_like"
           value={influencer.tiktok.tiktok_average_like}
         />
-        <Button type="submit">Submit</Button>
-      </form>
-    </div>
+      </div>
+
+      <Button type="submit">Submit</Button>
+    </form>
   );
 }

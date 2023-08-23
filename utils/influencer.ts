@@ -1,0 +1,15 @@
+export const influencer = {
+  name: "",
+  surname: "",
+  phone: "",
+  job: "",
+  score: "",
+  email: "",
+  age: 0,
+  gender: "",
+  country: "",
+  city: "",
+  language: "",
+  insta: { username: "", biography: "", profile_pic: "", followers: 0, following: 0, average_like: 0 },
+  tiktok: { username: "", bio_description: "", followers: 0, following: 0, hearts: 0, tiktok_average_like: 0 },
+};

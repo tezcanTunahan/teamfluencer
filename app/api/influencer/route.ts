@@ -4,7 +4,8 @@ import User from "@/models/influencer";
 
 connect();
 export async function GET(request: Request) {
-  return new Response("Hello world!");
+  const users = await User.find({});
+  return NextResponse.json(users);
 }
 
 export async function POST(req: Request) {

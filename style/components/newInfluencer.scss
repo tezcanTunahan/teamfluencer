@@ -1,2 +1,19 @@
+@import "../variable.scss";
 .newInfluencer {
+  @include flex(row, center, center);
+  width: 100%;
+  &__influencer {
+    @include flex(column, flex-end, center, 1rem);
+    width: 500px;
+  }
+  &__ins {
+    width: 500px;
+
+    @include flex(column, flex-end, center, 1rem);
+  }
+  &__tiktok {
+    width: 500px;
+
+    @include flex(column, flex-end, center, 1rem);
+  }
 }
