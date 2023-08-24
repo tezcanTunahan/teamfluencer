@@ -1,3 +1,10 @@
+live link :   https://teamfluencer.vercel.app/
+app/api/.. nın altında mongoDB ye istek attığım backend kodları var 
+/Models/.. in altında sizin sağladınığınz mongoose model var 
+database olarak mongoDB kullandım
+nextjs typescript scss mongoose sass kullandım 
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
