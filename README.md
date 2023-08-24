@@ -1,7 +1,15 @@
 live link :   https://teamfluencer.vercel.app/
+
+
 app/api/.. nın altında mongoDB ye istek attığım backend kodları var 
-/Models/.. in altında sizin sağladınığınz mongoose model var 
+
+
+/Models/.. in altında sizin sağladınığınz mongoose model var
+
+
 database olarak mongoDB kullandım
+
+
 nextjs typescript scss mongoose sass kullandım 
 
 
