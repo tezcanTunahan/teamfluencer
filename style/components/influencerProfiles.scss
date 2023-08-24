@@ -1,7 +1,18 @@
 @import "../variable.scss";
-.influencerProfiles {
+.influencerProfilesContainer {
+  margin-top: 15rem;
   width: 80%;
+  margin: 15rem auto;
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: $accent;
+  }
+}
+.influencerProfiles {
   margin: auto;
-  @include flex(row, center, center, 1rem);
+  @include flex(row, center, flex-start, 1rem);
   flex-wrap: wrap;
 }

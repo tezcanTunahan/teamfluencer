@@ -7,14 +7,16 @@ interface InputProps {
   value: string | number;
   name: string;
   placeholder: string;
+  style?: any;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Input: FC<InputProps> = ({ type, label, value, name, placeholder, onChange }) => {
+const Input: FC<InputProps> = ({ type, label, value, name, placeholder, onChange, style }) => {
   return (
     <div className="input-wrapper">
       <label htmlFor={label}>{label}</label>
       <input
+        style={style}
         className="input"
         type={type}
         id={label}

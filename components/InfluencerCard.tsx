@@ -9,8 +9,7 @@ export default function InfluencerCard(props: { influencerProfile: any }) {
       </h3>
       <p>{props.influencerProfile.insta.username}</p>
       <p>{props.influencerProfile.insta.biography}</p>
-      <p>{props.influencerProfile.insta.followers} followers</p>
-      <p>{props.influencerProfile.insta.following} following</p>
+      <p>score: {props.influencerProfile.score}</p>
     </a>
   );
 }
